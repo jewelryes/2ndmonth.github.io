@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    margin-top:100px;
+    margin-bottom:100px;
+    margin-left:10px;
+    margin-right:10px;
+    background-image: linear-gradient(to right, #8494FF, #C9BEFF, #FFDBFD);
+}
+    @media (max-width:600px) {
+        .container{
+        font-size:17px;
+    }
+}
+.container{
+    border-left:2px solid white;
+    background-color: #8494FF;
+    color:white;
+    border-radius:9px;
+    padding:9px;
+    font-family:Montserrat;
+   
+}
+#blueberry:hover{
+    cursor: pointer;
+    animation-name:blueberryRotate;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration:3s;
+}
+@keyframes blueberryRotate {
+    from{
+        transform:rotate(0deg);
+    }
+    50%{
+        transform:rotate(360deg);
+    }
+    to{
+        transform:rotate(0deg);
+    }
+}
